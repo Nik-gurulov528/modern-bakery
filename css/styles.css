@@ -1,0 +1,121 @@
+/* Base styles */
+:root {
+	--primary-color-white: #faf4ea;
+	--primary-color-brown: #31261a;
+	--primary-color-green: #819b57;
+	--secondary-color-white: #cfcfbc;
+	--secondary-color-brown: #a18268;
+	--secondary-color-green: #465929;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+body {
+	color: var(--primary-color-brown);
+	background-color: var(--primary-color-white);
+}
+
+/* Header section */
+.nav-link {
+	color: var(--primary-color-white);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--primary-color-green);
+}
+
+.order-btn {
+	border: 2px solid var(--primary-color-green);
+	border-radius: 8px;
+	background-color: var(--primary-color-green);
+	color: var(--primary-color-white);
+}
+
+.order-btn:hover,
+.order-btn:focus {
+	background-color: transparent;
+	color: var(--secondary-color-green);
+}
+
+/* Hero section */
+.main-title {
+	color: var(--primary-color-white);
+}
+
+.additional-main-title {
+	color: var(--primary-color-green);
+}
+
+/* Benefits section */
+
+.benefits-section {
+	background-color: var(--primary-color-green);
+}
+
+.benefits-list {
+	color: var(--primary-color-white);
+}
+
+/* "New format" section */
+
+.additional-definition {
+	color: var(--primary-color-green);
+}
+
+.baker-looking-img {
+	border-radius: 400px 400px 0 0;
+}
+
+/* Chefs section */
+.additional-chefs-title {
+	color: var(--secondary-color-green);
+}
+
+.chefs-img {
+	border-radius: 4px 4px 4px 200px;
+}
+
+/* Formats section */
+.formats-list {
+	color: var(--primary-color-white);
+}
+
+.format-article {
+	border-radius: 16px;
+}
+
+/* "Join us" section */
+.sub-title {
+	color: var(--secondary-color-green);
+}
+
+.location-part {
+	border-radius: 16px;
+}
+
+/* Footer section */
+.address-info {
+	color: var(--primary-color-white);
+}
+
+.address-info:hover,
+.address-info:focus {
+	color: var(--primary-color-green);
+}
+
+.privacy-policy-text {
+	color: var(--primary-color-white);
+}
+
+.privacy-policy-text:hover,
+.privacy-policy-text:focus {
+	color: var(--primary-color-green);
+}
+
+.data-saved-text {
+	color: var(--secondary-color-brown);
+}
