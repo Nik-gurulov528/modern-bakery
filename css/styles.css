@@ -1,3 +1,36 @@
+/* Fonts */
+@font-face {
+	font-display: swap;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+	font-display: swap;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
+}
+
 /* Base styles */
 :root {
 	--primary-color-white: #faf4ea;
@@ -13,9 +46,22 @@ ol {
 	list-style-type: none;
 }
 
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 64px;
+	line-height: 1.3;
+}
+
 body {
 	color: var(--primary-color-brown);
 	background-color: var(--primary-color-white);
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 /* Header section */
@@ -26,6 +72,7 @@ body {
 .nav-link:hover,
 .nav-link:focus {
 	color: var(--primary-color-green);
+	font-weight: 600;
 }
 
 .order-btn {
@@ -33,6 +80,8 @@ body {
 	border-radius: 8px;
 	background-color: var(--primary-color-green);
 	color: var(--primary-color-white);
+	font-weight: 600;
+	font-size: 18px;
 }
 
 .order-btn:hover,
@@ -44,6 +93,9 @@ body {
 /* Hero section */
 .main-title {
 	color: var(--primary-color-white);
+	font-weight: 900;
+	font-size: 128px;
+	text-align: center;
 }
 
 .additional-main-title {
@@ -58,12 +110,19 @@ body {
 
 .benefits-list {
 	color: var(--primary-color-white);
+	font-weight: 300;
+	font-size: 20px;
 }
 
 /* "New format" section */
 
 .additional-definition {
 	color: var(--primary-color-green);
+	font-weight: 600;
+}
+
+.is-uppercase {
+	text-transform: uppercase;
 }
 
 .baker-looking-img {
@@ -73,6 +132,15 @@ body {
 /* Chefs section */
 .additional-chefs-title {
 	color: var(--secondary-color-green);
+}
+
+.centered {
+	text-align: center;
+}
+
+.chefs-name {
+	font-weight: 600;
+	font-size: 40px;
 }
 
 .chefs-img {
@@ -88,9 +156,27 @@ body {
 	border-radius: 16px;
 }
 
+.format-title {
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.format-article p {
+	font-weight: 300;
+	font-size: 14px;
+}
+
 /* "Join us" section */
 .sub-title {
 	color: var(--secondary-color-green);
+}
+
+.clicking-agreement {
+	font-size: 12px;
+}
+
+.clicking-agreement-link {
+	text-decoration: underline;
 }
 
 .location-part {
@@ -98,6 +184,11 @@ body {
 }
 
 /* Footer section */
+.contact-info {
+	font-weight: 300;
+	font-size: 16px;
+}
+
 .address-info {
 	color: var(--primary-color-white);
 }
@@ -118,4 +209,6 @@ body {
 
 .data-saved-text {
 	color: var(--secondary-color-brown);
+	font-weight: 400;
+	font-size: 14px;
 }
