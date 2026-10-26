@@ -48,6 +48,8 @@
 ul,
 ol {
 	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 a {
@@ -61,7 +63,7 @@ h4,
 h5,
 h6,
 p {
-	margin-top: 0;
+	margin: 0;
 }
 
 h2 {
@@ -90,7 +92,38 @@ body {
 	padding: 48px 0;
 }
 
+.section:last-child {
+	padding: 48px 0 96px;
+}
+
 /* Header section */
+.header {
+	background-color: gray;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	justify-content: space-between;
+	padding: 32px 0 0;
+}
+
+.header-navigation-menu {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	gap: 40px;
+}
+
+.header-nav-list {
+	display: flex;
+	gap: 64px;
+	align-items: center;
+	flex-grow: 1;
+	justify-content: center;
+}
+
 .nav-link {
 	color: var(--primary-color-white);
 }
@@ -138,6 +171,7 @@ body {
 
 .benefits-section {
 	background-color: var(--primary-color-green);
+	padding: 16px 0;
 }
 
 .visually-hidden {
@@ -155,9 +189,15 @@ body {
 }
 
 .benefits-list {
-	color: var(--primary-color-white);
 	font-weight: 300;
 	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.benefits-item {
+	color: var(--primary-color-white);
 }
 
 /* "New format" section */
@@ -166,8 +206,26 @@ body {
 	padding-top: 96px;
 }
 
+.new-format-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.new-format-content {
+	max-width: 710px;
+}
+
 .new-format-title {
 	margin-bottom: 42px;
+}
+
+.new-format-definition {
+	max-width: 650px;
+}
+
+.new-format-definition:nth-child(3) {
+	max-width: 335px;
 }
 
 .additional-definition {
@@ -200,6 +258,22 @@ body {
 	text-align: center;
 }
 
+.chefs-list {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.chefs-item {
+	max-width: 600px;
+}
+
+.chefs-article {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
 .chefs-name {
 	font-weight: 600;
 	font-size: 40px;
@@ -210,6 +284,10 @@ body {
 	border-radius: 4px 4px 4px 200px;
 }
 
+.chefs-text:not(:last-child) {
+	margin-bottom: 28px;
+}
+
 /* Formats section */
 .formats-title {
 	margin-bottom: 80px;
@@ -217,10 +295,14 @@ body {
 
 .formats-list {
 	color: var(--primary-color-white);
+	display: flex;
+	gap: 20px;
 }
 
 .format-article {
 	border-radius: 16px;
+	flex-basis: calc((100% - 2 * 20px) / 3);
+	padding: 248px 24px 24px;
 }
 
 .format-title {
@@ -229,12 +311,27 @@ body {
 	margin-bottom: 16px;
 }
 
-.format-article p {
+.format-article {
+	border: 1px solid #000000;
+	background-color: lightgray;
+}
+
+.format-text {
 	font-weight: 300;
 	font-size: 14px;
 }
 
 /* "Join us" section */
+.join-us-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 32px;
+}
+
+.join-us-content {
+	max-width: 604px;
+}
+
 .join-us-title {
 	margin-bottom: 16px;
 }
@@ -244,12 +341,19 @@ body {
 	margin-bottom: 42px;
 }
 
+.join-us-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .agreement-gap {
 	margin-bottom: 16px;
 }
 
 .clicking-agreement {
 	font-size: 12px;
+	max-width: 240px;
 }
 
 .clicking-agreement-link {
@@ -261,6 +365,27 @@ body {
 }
 
 /* Footer section */
+.footer {
+	background-color: #000;
+	padding: 32px 100px;
+}
+
+.footer-container {
+	display: flex;
+	gap: 166px;
+}
+
+.footer-nav {
+	display: flex;
+	flex-grow: 1;
+	gap: 166px;
+}
+
+.footer-nav-menu {
+	flex-grow: 1;
+	max-width: 210px;
+}
+
 .footer-navigation {
 	margin-bottom: 16px;
 }
@@ -268,6 +393,13 @@ body {
 .contact-info {
 	font-weight: 300;
 	font-size: 16px;
+	display: flex;
+	flex-grow: 1;
+	gap: 166px;
+}
+
+.address-list {
+	max-width: 210px;
 }
 
 .address-info {
@@ -281,6 +413,7 @@ body {
 
 .privacy-policy-text {
 	color: var(--primary-color-white);
+	margin-bottom: 16px;
 }
 
 .privacy-policy-text:hover,
